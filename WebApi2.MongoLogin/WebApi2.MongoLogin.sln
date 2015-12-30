@@ -6,6 +6,8 @@ VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2.MongoLogin", "WebApi2.MongoLogin.csproj", "{7B20D279-398D-4A4C-81A5-0CDD8B84CABA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2.MongoLogin.Infrastructure.Identity.Model", "..\WebApi2.MongoLogin.Infrastructure.Identity.Model\WebApi2.MongoLogin.Infrastructure.Identity.Model.csproj", "{23F5BE07-3C88-491B-A89B-41BCF6010CA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,5 +18,9 @@ Global
 		{7B20D279-398D-4A4C-81A5-0CDD8B84CABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B20D279-398D-4A4C-81A5-0CDD8B84CABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B20D279-398D-4A4C-81A5-0CDD8B84CABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F5BE07-3C88-491B-A89B-41BCF6010CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F5BE07-3C88-491B-A89B-41BCF6010CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F5BE07-3C88-491B-A89B-41BCF6010CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F5BE07-3C88-491B-A89B-41BCF6010CA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
