@@ -14,4 +14,11 @@ I mention the most important external dependencies. I use those packages because
 
 - NUnit 
 - NInject
+- NInject.Extensions.ChildKernel
+
+I've used .Net Framework 4.5.2 because many new packages don't compile with versions lower than 4.5.x. 
+
+## Development Environment
+
+Due to I don't use Visual Studio to reach a largest audience (outside of US sometimes the price of a license is prohibitive) I have to include packages for the targets as external references. For developers using Visual Studio those packages are installed with Visual Studio.
 
