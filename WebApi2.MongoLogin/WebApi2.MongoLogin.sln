@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2.MongoLogin", "WebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2.MongoLogin.Infrastructure.Identity.Model", "..\WebApi2.MongoLogin.Infrastructure.Identity.Model\WebApi2.MongoLogin.Infrastructure.Identity.Model.csproj", "{23F5BE07-3C88-491B-A89B-41BCF6010CA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2.MongoLogin.Data.Shared", "..\WebApi2.MongoLogin.Data.Shared\WebApi2.MongoLogin.Data.Shared.csproj", "{62EEFC74-4E33-40C5-94E5-C31CB815D4DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2.MongoLogin.Data", "..\WebApi2.MongoLogin.Data\WebApi2.MongoLogin.Data.csproj", "{598E7C4D-76D7-464C-B756-0A38575C43F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,5 +26,13 @@ Global
 		{23F5BE07-3C88-491B-A89B-41BCF6010CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23F5BE07-3C88-491B-A89B-41BCF6010CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23F5BE07-3C88-491B-A89B-41BCF6010CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62EEFC74-4E33-40C5-94E5-C31CB815D4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62EEFC74-4E33-40C5-94E5-C31CB815D4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62EEFC74-4E33-40C5-94E5-C31CB815D4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62EEFC74-4E33-40C5-94E5-C31CB815D4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598E7C4D-76D7-464C-B756-0A38575C43F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598E7C4D-76D7-464C-B756-0A38575C43F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598E7C4D-76D7-464C-B756-0A38575C43F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598E7C4D-76D7-464C-B756-0A38575C43F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
