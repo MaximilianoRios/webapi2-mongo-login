@@ -17,7 +17,7 @@ namespace WebApi2.MongoLogin.Data
 	/// that hides the implementation under a class that you should inherit to use the database
 	/// The context uses a Configuration class to get the details of the connection
 	/// </summary>
-	public class MongoDbContext
+	public class MongoDbContext : IDisposable
 	{
 		protected static IMongoClient _client;
 		protected static IMongoDatabase _database;
