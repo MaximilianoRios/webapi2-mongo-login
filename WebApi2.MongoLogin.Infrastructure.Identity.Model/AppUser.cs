@@ -38,6 +38,7 @@ namespace WebApi2.MongoLogin.Infrastructure.Identity.Model
 		public DateTime BirthDate { get; set; }
 		public string PasswordHash  { get; set; }
 		public string SecurityStamp { get; set; }
+		//  [BsonDateTimeOptions(DateOnly = true)]
 		public DateTime? Created { get; set; }
 		public DateTime? LastUpdated { get; set; }		
 		

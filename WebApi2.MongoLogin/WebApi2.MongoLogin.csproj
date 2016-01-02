@@ -93,6 +93,9 @@
       <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -134,6 +137,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,6 +147,8 @@
     <Compile Include="Infrastructure\SecurityHelper.cs" />
     <Compile Include="Infrastructure\SecurityUserManager.cs" />
     <Compile Include="Infrastructure\UserStore.cs" />
+    <Compile Include="Model\Enums.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +159,8 @@
   <ItemGroup>
     <Folder Include="App_Start" />
     <Folder Include="Infrastructure" />
+    <Folder Include="Controllers" />
+    <Folder Include="Model" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebApi2.MongoLogin.Data.Shared\WebApi2.MongoLogin.Data.Shared.csproj">

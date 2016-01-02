@@ -21,9 +21,10 @@ namespace WebApi2.MongoLogin.Data
 
 		public async Task<AppUser> CreateUserAsync(AppUser user)
 		{
-			DateTime now = DateTime.UtcNow;			
+			DateTime now =  DateTime.UtcNow;			
 			var coll = _database.GetCollection<AppUser>("users");
-			user.Created = now.AddMilliseconds(-now.Millisecond); // Fix a serialization problem on dates with milliseconds
+			user.BirthDate = user.BirthDate; 
+			user.Created = now; 
 			await coll.InsertOneAsync(user);
 			var id = user.Id;
 			return user;
@@ -47,5 +48,10 @@ namespace WebApi2.MongoLogin.Data
 			return result;
 		}
 
+		private DateTime RemoveMilliseconds(DateTime dateTime) {
+			return new DateTime(
+    			dateTime.Ticks - (dateTime.Ticks % TimeSpan.TicksPerSecond), 
+    			dateTime.Kind);
+		}
 	}
 }
