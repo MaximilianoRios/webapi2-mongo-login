@@ -34,7 +34,7 @@ namespace WebApi2.MongoLogin
 			_passwordHasher = new AppPasswordHasher();
 		}
 		
-		// [Authorize]
+		[Authorize]
     	public async Task<IHttpActionResult> GetUser(string id) {
 			Console.WriteLine("Get user {0}", id);
     		var appUser = await UserManager.FindByIdAsync(id);
